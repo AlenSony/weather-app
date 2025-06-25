@@ -169,6 +169,16 @@ body::after {
     gap:10px;
     padding:10px;
     font-size: 1rem;
+    animation: animate 1s linear;
+}
+@keyframes animate {
+    from{
+        left:-100%;
+    }
+    to{
+        left:0;
+    }
+    
 }
 .content .name{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -176,7 +186,7 @@ body::after {
     color:greenyellow;
     text-align: center;
     margin-top: 10px;
-    display: flex;
+    display:inline-block;
     justify-content: center;
     gap:10px;
 }

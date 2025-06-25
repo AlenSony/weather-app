@@ -18,8 +18,12 @@ check.addEventListener("click",async () =>{
         video.load();
 
     }
-    else if(weather == "Patchy rain nearby" || weather == "Rainy" || weather == "Light rain shower" || weather == "Light drizzle" || weather == "Light rain" || weather == "Light rain shower" || weather == "Light rain showers" || weather == "Moderate rain at times" || weather == "Moderate rain"){
+    else if(weather == "Patchy rain nearby" || weather == "Rainy" || weather == "Light rain shower" || weather == "Light drizzle" || weather == "Light rain" || weather == "Light rain shower" || weather == "Light rain showers" || weather == "Moderate rain at times" || weather == "Moderate rain" ||  weather == "Patchy light rain with thunder"){
         source.src = `./public/Rainy.mp4`;
+        video.load();
+    }
+    else if(weather == "Thunderstorm" || weather == "Thundery outbreaks possible" ||weather == "Patchy light rain with thunder" ||weather == "Moderate or heavy rain with thunder" ||weather == "Patchy light snow with thunder" ||weather == "Moderate or heavy snow with thunder" ){
+        source.src = `./public/Thunderstorm.mp4`;
         video.load();
     }
     else{
@@ -51,8 +55,12 @@ check.addEventListener("click",async () =>{
         video.load();
 
     }
-    else if(weather == "Patchy rain nearby" || weather == "Rainy" || weather == "Light rain shower" || weather == "Light drizzle" || weather == "Light rain" || weather == "Light rain shower" || weather == "Light rain showers" || weather == "Moderate rain at times" || weather == "Moderate rain"){
+    else if(weather == "Patchy rain nearby" || weather == "Rainy" || weather == "Light rain shower" || weather == "Light drizzle" || weather == "Light rain" || weather == "Light rain shower" || weather == "Light rain showers" || weather == "Moderate rain at times" || weather == "Moderate rain" ||  weather == "Patchy light rain with thunder   "){
         source.src = `./public/Rainy.mp4`;
+        video.load();
+    }
+    else if(weather == "Thunderstorm" || weather == "Thundery outbreaks possible" ||weather == "Patchy light rain with thunder" ||weather == "Moderate or heavy rain with thunder" ||weather == "Patchy light snow with thunder" ||weather == "Moderate or heavy snow with thunder" ){
+        source.src = `./public/Thunderstorm.mp4`;
         video.load();
     }
     else{
