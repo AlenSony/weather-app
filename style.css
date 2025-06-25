@@ -43,6 +43,7 @@ body::after {
     display:flex;
     flex-direction: column;
     box-shadow: -2px -2px 20px rgb(68, 62, 62);
+    min-width: 100px;
 
 }
 .timestamp .time{
