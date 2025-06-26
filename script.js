@@ -44,7 +44,7 @@ check.addEventListener("click",async () =>{
 });
     async function success(position){
         console.log(position.coords.latitude,position.coords.longitude);
-        const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=3ee44c607e57416396270326252406&q=${position.coords.latitude},${position.coords.longitude}&aqi=no`);
+        const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${position.coords.latitude},${position.coords.longitude}&aqi=no`);
         const result = await data.json();
         console.log(result);
         console.log(result.location.name);
@@ -117,7 +117,7 @@ setInterval(updateTime,1000);
 
 
 async function fetchData(City) {
-    const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=3ee44c607e57416396270326252406&q=${City}&aqi=no`);
+    const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${City}&aqi=no`);
     const result = await data.json();
     console.log(result);
     return result;
